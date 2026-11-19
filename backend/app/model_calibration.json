@@ -1,0 +1,12 @@
+{
+  "embedding_model": "sface-2021dec",
+  "dataset": "Kaggle LFW (jessicali9530/lfw-dataset)",
+  "calibrated_at": "2026-10-06T09:58:04.362204+00:00",
+  "cosine_threshold": 0.346,
+  "target_false_accept_rate": 0.001,
+  "measured_false_accept_rate": 0.000938,
+  "measured_true_accept_rate": 0.992767,
+  "genuine_pairs": 1106,
+  "impostor_pairs": 7459,
+  "seed": 7632
+}

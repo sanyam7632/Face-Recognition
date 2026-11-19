@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+backend/data/
+backend/training-data/
+backend/training/.packages/
+frontend/node_modules/
+frontend/.expo/
+frontend/dist/
+frontend/dist-android/
+

@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Face Recognition",
+    "slug": "facelock",
+    "version": "2.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.facelock.app",
+      "permissions": [],
+      "blockedPermissions": ["android.permission.RECORD_AUDIO"]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Face Recognition to scan a laptop pairing QR code.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Face Recognition to select consented reference photos."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "efa5eafa-e8ca-45cc-8fbe-81b7ee442c5f"
+      }
+    }
+  }
+}

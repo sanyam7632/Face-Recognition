@@ -1,0 +1,16 @@
+services:
+  api:
+    build: ./backend
+    env_file: .env
+    environment:
+      DATABASE_URL: sqlite:////app/data/facelock.db
+      STORAGE_DIR: /app/data/uploads
+    ports:
+      - "8000:8000"
+    volumes:
+      - facelock_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  facelock_data:
+
